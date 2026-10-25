@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+}
+
+main {
+    padding: 60px 40px;
+}
+
+@media all and (min-width: 600px) {
+    main {
+        padding: 80px 60px;
+    }
+}
+
+@media all and (min-width: 900px) {
+    main {
+        padding: 80px 80px;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    main {
+        padding: 80px 100px;
+    }
+}
+
+main > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+h1 {
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.frame {
+    flex: 1;
+    border-width: 2px;
+    padding: 30px;
+    min-width: 300px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #7f7f7f;
+    background-color: #fff;
+}
+
+.frame > h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.frame > h2::after {
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 1px;
+    display: block;
+    content: '';
+    background-clip: content-box;
+    background-color: #7f7f7f;
+}
+
+.frame > p {
+    justify-self: center;
+    margin: auto;
+    font-size: 28px;
+    text-align: center;
+}
+
+.frame > p[id],
+.frame > p > span[id] {
+    font-size: 48px;
+}
+
+.frame:has(> div) {
+    min-width: 500px;
+}
+
+.frame > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.frame > div > div {
+    padding: 20px;
+    background-clip: content-box;
+}
+
+.frame > div > ul {
+    flex: 1;
+    padding: 20px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    overflow: auto;
+}
+
+.frame > div > ul > li {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: max-content;
+    list-style: none;
+}
+
+.frame > div > ul > li > div {
+    width: 16px;
+    height: 16px;
+}
+
+.frame > div > ul > li > span:first-of-type {
+    font-weight: bold;
+}
+
+.chart {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #7f7f7f;
+}

@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    Hello world!
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <title>MyBestSim Test - Partie 1</title>
+    </head>
+    <body>
+        <main>
+            <h1>Visualisation de produits eSIM de différents fournisseurs</h1>
+            <div>
+                <div class="frame">
+                    <h2>Nombre total de produits eSIM</h2>
+                    <p id="total-products">0</p>
+                </div>
+                <div class="frame">
+                    <h2>Nombre total de produits à plus de 100€</h2>
+                    <p id="total-over-100">0</p>
+                </div>
+                <div class="frame">
+                    <h2>Fourchette de prix globale</h2>
+                    <p><span id="min-price">0</span> € / <span id="max-price">0</span> €</p>
+                </div>
+                <div class="frame">
+                    <h2>Moyenne de données par carte</h2>
+                    <p><span id="average-go">0</span> Go</p>
+                </div>
+                <div class="frame">
+                    <h2>Prix moyen global</h2>
+                    <p><span id="average-price">0</span> €</p>
+                </div>
+                <div class="frame">
+                    <h2>Répartition par fournisseur</h2>
+                    <div>
+                        <div id="providers-chart" class="chart"></div>
+                        <ul id="providers-list"></ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
